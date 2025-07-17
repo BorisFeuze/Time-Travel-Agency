@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container-header {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header-top {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  background-color: rgb(254, 207, 119);
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 2rem;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.services-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.services-item {
+  font-size: 0.7rem;
+}
+
+.main-header {
+  height: 20rem;
+  background-image: url(../pictures/header/picture-bali.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-in-main-header {
+  background-color: transparent;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.text-discover {
+  font-size: 3rem;
+}
+
+.text-bali {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.nav-header-bottom {
+  width: auto;
+  height: 4rem;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.8rem;
+  padding-inline: 0.5rem;
+  justify-content: space-between;
+}
+.container-input,
+.container-text {
+  width: 6rem;
+  height: fit-content;
+}
+.container-text {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.imput-origin,
+.imput-Destination,
+.imput-depart_date,
+.imput-depart_return {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  font-size: 12px;
+  padding: 0.3rem;
+}
+
+.imput-depart_date,
+.imput-depart_return {
+  padding: 0.25rem;
+}
+.container-input {
+  position: relative;
+  /* border: 2px solid; */
+}
+
+.date-depart,
+.date-return {
+  position: absolute;
+  color: rgb(125, 124, 124);
+  font-size: 6px;
+  margin-top: -31px;
+  margin-left: 4px;
+  /* border: 2px solid; */
+}
+
+.container-text div {
+  width: 4rem;
+  text-align: center;
+  font-size: 9px;
+  /* border: 2px solid orangered; */
+}
+
+.container-text div span {
+  color: rgb(125, 124, 124);
+}
+
+.button-search {
+  width: 10rem;
+  height: 2rem;
+  background-color: rgb(254, 207, 119);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.container-main {
+  display: grid;
+  grid-template-rows: 3rem 8rem 3rem 8rem;
+  /* justify-content: center; */
+  align-items: end;
+  /* border: 2px solid red; */
+}
+
+.text-popular,
+.text-offer {
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  /* border: 2px solid green; */
+}
+
+.image-asia,
+.image-south-asia,
+.image-australia {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container-popular-destinations {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 9px;
+  padding: 0 3rem;
+  /* border: 2px solid orange; */
+}
+
+.popular-destination {
+  height: 8rem;
+  border-radius: 15px;
+  align-content: center;
+  /* border: 2px solid olivedrab; */
+}
+
+.container-special-offer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 9px;
+  padding: 0 5rem;
+  /* border: 2px solid orange; */
+}
+
+.special-offer {
+  height: 8rem;
+  border-radius: 15px;
+  /* border: 2px solid; */
+}
+
+.image-offer-emirates,
+.iimage-offer-etihad,
+.image-offer-gulf {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
