@@ -65,7 +65,7 @@ a:hover {
 
 .nav-header-top {
   width: 100%;
-  height: 1.5rem;
+  height: 4rem;
   display: flex;
   background-color: rgb(254, 207, 119);
   justify-content: space-between;
@@ -75,10 +75,11 @@ a:hover {
 }
 
 .logo {
-  width: 2rem;
+  width: 8rem;
 }
 
 .logo-image {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -93,7 +94,7 @@ a:hover {
 }
 
 .services-item {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
 }
 
 .main-header {
@@ -125,16 +126,16 @@ a:hover {
   display: flex;
   flex-direction: row;
   padding-top: 0.8rem;
-  padding-inline: 0.5rem;
+  padding-inline: 1.8rem;
   justify-content: space-between;
 }
 .container-input,
 .container-text {
-  width: 6rem;
+  width: 9rem;
   height: fit-content;
 }
 .container-text {
-  height: 2rem;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +149,7 @@ a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
-  font-size: 12px;
+  font-size: 18px;
   padding: 0.3rem;
 }
 
@@ -165,16 +166,16 @@ a:hover {
 .date-return {
   position: absolute;
   color: rgb(125, 124, 124);
-  font-size: 6px;
-  margin-top: -31px;
+  font-size: 10px;
+  margin-top: -39px;
   margin-left: 4px;
   /* border: 2px solid; */
 }
 
 .container-text div {
-  width: 4rem;
+  width: 7rem;
   text-align: center;
-  font-size: 9px;
+  font-size: 12px;
   /* border: 2px solid orangered; */
 }
 
@@ -184,7 +185,7 @@ a:hover {
 
 .button-search {
   width: 10rem;
-  height: 2rem;
+  height: 2.5rem;
   background-color: rgb(254, 207, 119);
   font-weight: bold;
   border: none;
@@ -193,26 +194,14 @@ a:hover {
 
 .container-main {
   display: grid;
-  grid-template-rows: 3rem 8rem 3rem 8rem;
-  /* justify-content: center; */
-  align-items: end;
-  /* border: 2px solid red; */
+  grid-template-rows: 1fr 3fr 1fr 3fr;
+  align-items: center;
 }
 
 .text-popular,
 .text-offer {
-  width: 100%;
-  height: auto;
-  justify-items: center;
-  /* border: 2px solid green; */
-}
-
-.image-asia,
-.image-south-asia,
-.image-australia {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 2rem;
+  margin-inline: auto;
 }
 
 .container-popular-destinations {
@@ -222,14 +211,28 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 9px;
   padding: 0 3rem;
-  /* border: 2px solid orange; */
 }
 
-.popular-destination {
-  height: 8rem;
-  border-radius: 15px;
-  align-content: center;
-  /* border: 2px solid olivedrab; */
+.popular-destination img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: cover;
+  position: relative;
+}
+
+.info-destination {
+  position: absolute;
+  margin-top: -180px;
+  margin-left: 2rem;
+}
+.info-destination div {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.info-destination button {
+  padding: 0.01rem 1.5rem;
 }
 
 .container-special-offer {
@@ -251,6 +254,7 @@ a:hover {
 .image-offer-emirates,
 .iimage-offer-etihad,
 .image-offer-gulf {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
